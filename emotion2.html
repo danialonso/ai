@@ -18,11 +18,11 @@
         };
       
         $.ajax({
-            url: "https://westcentralus.api.cognitive.microsoft.com/emotion/v1.0/recognize?faceRectangles={faceRectangles}&" + $.param(params),
+            url: "https://southcentralus.api.cognitive.microsoft.com/emotion/v1.0/recognize?faceRectangles={faceRectangles}&" + $.param(params),
             beforeSend: function(xhrObj){
                 // Request headers
                 xhrObj.setRequestHeader("Content-Type","application/json");
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","c858726725424ce1b95127a9851f5097");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","35b903f30b5846cf8904172ac0a21010");
             },
             type: "POST",
             // Request body
