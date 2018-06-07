@@ -49,7 +49,7 @@
 				document.getElementById('results').innerHTML = 
 					'<h2>Processing:</h2>';
 					
-				Webcam.upload( data_uri, 'saveimage.php', function(code, text) {
+				Webcam.upload( data_uri, 'https://www.techclubupct.com/ai/emotion/saveimage.php', function(code, text) {
 					document.getElementById('results').innerHTML = 
 					'<h2>Here is your image:</h2>' + 
 					'<img src="'+text+'"/>';
