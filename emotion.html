@@ -27,13 +27,13 @@
             // NOTE: You must use the same location in your REST call as you used to obtain your subscription keys.
             //   For example, if you obtained your subscription keys from westcentralus, replace "westus" in the 
             //   URL below with "westcentralus".
-            url: "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize?" + $.param(params),
+            url: "https://westcentralus.api.cognitive.microsoft.com/emotion/v1.0/recognize?" + $.param(params),
             beforeSend: function(xhrObj){
                 // Request headers, also supports "application/octet-stream"
                 xhrObj.setRequestHeader("Content-Type","application/json");
 
                 // NOTE: Replace the "Ocp-Apim-Subscription-Key" value with a valid subscription key.
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","d2f631a6-1f62-4ebb-8d91-e12045e4e3af");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","c858726725424ce1b95127a9851f5097");
             },
             type: "POST",
             // Request body
